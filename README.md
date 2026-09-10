@@ -24,7 +24,7 @@ Minha atuação é direcionada à convergência entre **engenharia física, aqui
 
 #### 🛰️ [Integração de Dados Geoespaciais e Qualidade do Ar (CETESB & QGIS)](https://github.com/f1scher01/cetesb-air-quality-sp)
 *Pipeline de dados desenvolvido com foco na integração de séries temporais de monitoramento atmosférico com a Missão MAIA-NASA.*
-* Ingestão e agregação de dados de material particulado fino ($PM_{2.5}$ e $PM_{10}$) de 17 estações automáticas da Grande São Paulo.
+* Ingestão e agregação de dados de material particulado fino (PM₂.₅ e PM₁₀) de 17 estações automáticas da Grande São Paulo.
 * Modelagem contínua por interpolação espacial (IDW), fracionamento químico especiado (Sulfato, Nitrato, Carbono e Poeira) e estimativa de impacto em saúde pública (SIH/SUS).
 * Georreferenciamento e estruturação de camadas vetoriais em GeoJSON com rotinas de automação para o QGIS.
 * **Tecnologias:** Python, Pandas, NumPy, QGIS, Cartografia Digital, GeoJSON.
