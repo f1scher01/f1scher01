@@ -29,11 +29,11 @@ Minha atuação é direcionada à convergência entre **engenharia física, aqui
 * Georreferenciamento e estruturação de camadas vetoriais em GeoJSON com rotinas de automação para o QGIS.
 * **Tecnologias:** Python, Pandas, NumPy, QGIS, Cartografia Digital, GeoJSON.
 
-#### 🏎️ [Sistema de Telemetria Veicular & Séries Temporais](https://github.com/f1scher01/telemetria-veicular-grafana)
+#### 🏎️ [Sistema de Telemetria Veicular & Séries Temporais](https://github.com/f1scher01/telemetria-veicular-grafana) · [![Grafana Cloud](https://img.shields.io/badge/Grafana%20Cloud-Ao%20Vivo-F46800?style=flat-square&logo=grafana&logoColor=white)](https://fischerpaez.grafana.net/public-dashboards/5ea12a828dd1478eb54041c8624531d0)
 *Plataforma completa de aquisição, modelagem física e visualização contínua de dinâmica veicular e termodinâmica no Autódromo de Interlagos.*
-* Cockpit analítico completo com tacômetro digital/analógico, shift lights, forças G (diagrama G-G) e traçado GPS sincronizado.
+* Cockpit analítico completo no Grafana com tacômetro digital/analógico, shift lights, forças G (diagrama G-G) e traçado GPS sincronizado.
 * Monitoramento de pressão e temperatura de óleo do motor, arrefecimento e sobreposição de acelerador (TPS) e frenagem.
-* Stack industrial de contêineres com Docker Compose, InfluxDB 2.7 e dashboards provisionados no Grafana 10.4.
+* **Painel no Grafana Cloud:** [Acessar Demonstração Ao Vivo](https://fischerpaez.grafana.net/public-dashboards/5ea12a828dd1478eb54041c8624531d0)
 * **Tecnologias:** Grafana, InfluxDB, Docker, Python, Sensores Físicos (IMU, CAN-Bus, GPS), Séries Temporais.
 
 #### 📱 [PWA de Acompanhamento Acadêmico e Projeção de CR](https://github.com/f1scher01/notas-cr-maua-pwa)
