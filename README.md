@@ -29,13 +29,13 @@ Minha atuação é direcionada à convergência entre **engenharia física, aqui
 * Georreferenciamento e estruturação de camadas vetoriais em GeoJSON com rotinas de automação para o QGIS.
 * **Tecnologias:** Python, Pandas, NumPy, QGIS, Cartografia Digital, GeoJSON.
 
-#### 📊 [Sistema de Telemetria Veicular e Séries Temporais](https://github.com/f1scher01)
+#### 📊 [Sistema de Telemetria Veicular e Séries Temporais](https://github.com/f1scher01/telemetria-veicular-grafana)
 *Painel de aquisição e visualização contínua de parâmetros mecânicos no Grafana.*
 * Monitoramento de pressão e temperatura de óleo do motor com registro histórico de séries.
 * Integração de camada de geolocalização por GPS para correlacionar grandezas termodinâmicas à posição espacial do veículo em pista.
 * **Tecnologias:** Grafana, Sensores Físicos, Telemetria, GPS.
 
-#### 📱 [PWA de Acompanhamento Acadêmico e Projeção de CR](https://notas-cr-maua.vercel.app)
+#### 📱 [PWA de Acompanhamento Acadêmico e Projeção de CR](https://github.com/f1scher01/notas-cr-maua-pwa)
 *Aplicação web progressiva para modelagem matemática de regras pedagógicas e cálculo de notas.*
 * Algoritmo que modela critérios de substituição de provas e projeta médias ponderadas e coeficiente de rendimento em tempo real.
 * Em produção e utilizado ativamente por colegas de turma.
