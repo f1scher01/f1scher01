@@ -29,11 +29,12 @@ Minha atuação é direcionada à convergência entre **engenharia física, aqui
 * Georreferenciamento e estruturação de camadas vetoriais em GeoJSON com rotinas de automação para o QGIS.
 * **Tecnologias:** Python, Pandas, NumPy, QGIS, Cartografia Digital, GeoJSON.
 
-#### 📊 [Sistema de Telemetria Veicular e Séries Temporais](https://github.com/f1scher01/telemetria-veicular-grafana)
-*Painel de aquisição e visualização contínua de parâmetros mecânicos no Grafana.*
-* Monitoramento de pressão e temperatura de óleo do motor com registro histórico de séries.
-* Integração de camada de geolocalização por GPS para correlacionar grandezas termodinâmicas à posição espacial do veículo em pista.
-* **Tecnologias:** Grafana, Sensores Físicos, Telemetria, GPS.
+#### 🏎️ [Sistema de Telemetria Veicular & Séries Temporais](https://github.com/f1scher01/telemetria-veicular-grafana)
+*Plataforma completa de aquisição, modelagem física e visualização contínua de dinâmica veicular e termodinâmica no Autódromo de Interlagos.*
+* Cockpit web interativo em tempo real a 10 Hz com tacômetro digital/analógico, shift lights, forças G (diagrama G-G) e traçado GPS sincronizado.
+* Monitoramento de pressão e temperatura de óleo do motor, arrefecimento e sobreposição de acelerador (TPS) e frenagem.
+* Arquitetura dual: execução autônoma instantânea em Python/HTML5 e stack industrial de contêineres com Docker, InfluxDB 2.7 e Grafana 10.4.
+* **Tecnologias:** Python, Grafana, InfluxDB, Canvas/HTML5, Sensores Físicos (IMU, CAN-Bus, GPS), Séries Temporais.
 
 #### 📱 [PWA de Acompanhamento Acadêmico e Projeção de CR](https://github.com/f1scher01/notas-cr-maua-pwa)
 *Aplicação web progressiva para modelagem matemática de regras pedagógicas e cálculo de notas.*
