@@ -22,8 +22,9 @@ melhorar o projeto.
 * **CAD:** CATIA / 3DEXPERIENCE, Siemens NX, SolidWorks, AutoCAD.
 * **Seleção de materiais:** Ansys Granta EduPack — constrições, índices de mérito, análise de custo.
 * **Dados e observabilidade:** Grafana, InfluxDB, Docker, séries temporais.
-* **Geoespacial:** camadas vetoriais GeoJSON, EPSG:4326, carregamento automatizado no console
-  Python do QGIS. *Sem experiência ainda com leitura de NetCDF/HDF5 reais.*
+* **Geoespacial:** NetCDF-4 de satélite (GOES-19 ABI) com GDAL, reprojeção de grade
+  geoestacionária, filtragem por flag de qualidade, GeoTIFF, GeoJSON e GeoPackage, SIRGAS 2000 /
+  UTM 23S, PyQGIS (simbologia e layouts gerados por script).
 * **Qualidade e processo:** Lean Six Sigma Green Belt, ciclo DMAIC.
 * **Idiomas:** Português nativo · Espanhol avançado · Inglês avançado · Francês intermediário
   (TCF Tout Public: **B1 global, compreensão oral e escrita em B2**).
@@ -32,15 +33,17 @@ melhorar o projeto.
 
 ### 🚀 Projetos
 
-#### 🛰️ [Integração Geoespacial de Poluição e Saúde Coletiva](https://github.com/f1scher01/cetesb-air-quality-sp) · `dados sintéticos`
-Estudo metodológico de integração entre sensoriamento remoto, medição de superfície e desfecho
-hospitalar na Região Metropolitana de São Paulo.
-* Interpolação espacial IDW implementada do zero, com tratamento do caso degenerado.
-* Função concentração-resposta da OMS, risco relativo e fração atribuível populacional.
-* Estruturação de camada vetorial GeoJSON e automação de carregamento no QGIS.
-* **Os dados de estação e de internação são sintéticos.** O repositório demonstra o método, não
-  produz estimativa epidemiológica.
-* **Stack:** Python, NumPy, Pandas, Matplotlib, QGIS, GeoJSON.
+#### 🛰️ [Aerossóis na RMSP: GOES-19 × CETESB × QGIS](https://github.com/f1scher01/cetesb-air-quality-sp) · `dados reais`
+Pipeline que liga AOD de satélite, rede de superfície e limites oficiais na Região Metropolitana
+de São Paulo, rodando inteiro no Python do QGIS.
+* Ingestão de NetCDF-4 do GOES-19 (AOD 550 nm), reprojeção da grade geoestacionária com GDAL e
+  descarte de pixels por flag de qualidade.
+* Coleta automatizada da rede CETESB pelo serviço público do QUALAR, com inversão do índice de
+  qualidade do ar para µg/m³ e pontos de quebra verificados nos próprios dados.
+* Colocalização satélite × estação e mapa final montado por PyQGIS, sem abrir a interface.
+* Primeiro estudo de caso (11/09/2026, 13 estações): sem correlação, r = 0,09. O README explica
+  por que isso era esperado e o que falta medir.
+* **Stack:** Python, GDAL, PyQGIS, NumPy, Pandas, SciPy.
 
 #### 🏎️ [Simulador de Telemetria e Stack de Séries Temporais](https://github.com/f1scher01/telemetria-veicular-grafana) · `dados simulados` · [![Painel](https://img.shields.io/badge/Grafana%20Cloud-painel%20público-F46800?style=flat-square&logo=grafana&logoColor=white)](https://fischerpaez.grafana.net/public-dashboards/5ea12a828dd1478eb54041c8624531d0)
 Pipeline completo de geração, ingestão, persistência e visualização de séries temporais.
@@ -55,7 +58,7 @@ Aplicação web que modela as regras de avaliação de oito disciplinas e projet
 coeficiente de rendimento em tempo real.
 * Implementa as regras de prova substitutiva de cada disciplina a partir dos planos de ensino.
 * **Em uso real por colegas de curso.**
-* **Stack:** TypeScript, React, Next.js, Vercel.
+* **Stack:** HTML, CSS e JavaScript sem framework, Service Worker, Vercel.
 
 ---
 
