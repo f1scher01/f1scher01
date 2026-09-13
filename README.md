@@ -33,23 +33,27 @@ melhorar o projeto.
 
 ### 🚀 Projetos
 
-#### 🛰️ [Aerossóis na RMSP: GOES-19 × CETESB × QGIS](https://github.com/f1scher01/cetesb-air-quality-sp) · `dados reais`
-Pipeline que liga AOD de satélite, rede de superfície e limites oficiais na Região Metropolitana
-de São Paulo, rodando inteiro no Python do QGIS.
+#### 🛰️ [Poluição do ar e saúde na RMSP: GOES-19 × CETESB × SIH/SUS × QGIS](https://github.com/f1scher01/cetesb-air-quality-sp) · `dados reais`
+Pipeline que liga AOD de satélite, rede de superfície, internações do SUS e limites oficiais na
+Região Metropolitana de São Paulo, rodando no Python do QGIS.
 * Ingestão de NetCDF-4 do GOES-19 (AOD 550 nm), reprojeção da grade geoestacionária com GDAL e
   descarte de pixels por flag de qualidade.
 * Coleta automatizada da rede CETESB pelo serviço público do QUALAR, com inversão do índice de
   qualidade do ar para µg/m³ e pontos de quebra verificados nos próprios dados.
-* Colocalização satélite × estação e mapa final montado por PyQGIS, sem abrir a interface.
-* Primeiro estudo de caso (11/09/2026, 13 estações): sem correlação, r = 0,09. O README explica
-  por que isso era esperado e o que falta medir.
+* Leitura direta dos arquivos DBC do SIH/SUS: 230 mil internações respiratórias e circulatórias de
+  residentes da RMSP em 12 meses, agregadas por município e integradas à população do IBGE e ao
+  satélite numa camada GeoPackage.
+* Mapas montados por PyQGIS, sem abrir a interface. Os READMEs registram o que o dado sustenta e o
+  que ainda não: sem correlação satélite × estação num único scan (r = 0,09) e taxas brutas que
+  refletem dependência do SUS, não poluição.
 * **Stack:** Python, GDAL, PyQGIS, NumPy, Pandas, SciPy.
 
 #### 🏎️ [Simulador de Telemetria e Stack de Séries Temporais](https://github.com/f1scher01/telemetria-veicular-grafana) · `dados simulados` · [![Painel](https://img.shields.io/badge/Grafana%20Cloud-painel%20público-F46800?style=flat-square&logo=grafana&logoColor=white)](https://fischerpaez.grafana.net/public-dashboards/5ea12a828dd1478eb54041c8624531d0)
 Pipeline completo de geração, ingestão, persistência e visualização de séries temporais.
-* Modelo cinemático e termodinâmico gerando telemetria sintética a 10 Hz.
+* Modelo físico a 10 Hz: avanço por distância percorrida, G lateral por v²/R e térmica de primeira
+  ordem; o tempo de volta sai do modelo, não de uma constante.
 * Ingestão via InfluxDB Line Protocol, persistência em InfluxDB 2.7, orquestração em Docker.
-* Dashboard Grafana provisionado automaticamente e cockpit web autônomo.
+* Dashboard Grafana com consultas Flux provisionado automaticamente e cockpit web autônomo.
 * **A telemetria é gerada por simulação.** Não há veículo instrumentado.
 * **Stack:** Python, InfluxDB, Grafana, Docker, séries temporais.
 
