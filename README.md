@@ -4,48 +4,67 @@
 [![Email](https://img.shields.io/badge/Email-fischer.paez%40gmail.com-red?logo=gmail&logoColor=white)](mailto:fischer.paez@gmail.com)
 [![Web App](https://img.shields.io/badge/Web%20App-notas--cr--maua.vercel.app-blueviolet)](https://notas-cr-maua.vercel.app)
 
-Estudante do 2º ano de **Engenharia Mecânica** no **Instituto Mauá de Tecnologia (IMT)** com **Coeficiente de Rendimento 8,23** e certificação **Lean Six Sigma Green Belt**.
+Estudante do 2º ano de **Engenharia Mecânica** no **Instituto Mauá de Tecnologia (IMT)**, com
+coeficiente de rendimento 8,23 e certificação **Lean Six Sigma Green Belt**.
 
-Minha atuação é direcionada à convergência entre **engenharia física, aquisição de dados e desenvolvimento de software**, aplicando programação e análise de séries temporais para modelar e solucionar problemas práticos de engenharia, telemetria e geoprocessamento.
-
----
-
-### 🛠️ Competências & Tecnologias
-
-* **Programação & Análise Numérica:** Python (Pandas, NumPy, Matplotlib), TypeScript, JavaScript, MATLAB, Minitab.
-* **Geoprocessamento & Dados Geoespaciais:** QGIS, manipulação de camadas vetoriais (GeoJSON/Shapefile), noções de matrizes de sensoriamento remoto (NetCDF/HDF5).
-* **Instrumentação & Telemetria:** Grafana, aquisição de dados de sensores físicos (pressão, temperatura, dinamômetro) e geolocalização com GPS.
-* **Otimização & Qualidade:** Lean Six Sigma (Ciclo DMAIC), Análise Estatística de Processos, Métodos Numéricos e Elementos Finitos (FEA).
-* **Idiomas:** Português (nativo), Espanhol (avançado), Inglês (avançado), Francês (B1/B2 certificado - TCF Tout Public).
+Trabalho na fronteira entre **engenharia física, aquisição de dados e desenvolvimento de
+software**: modelar um fenômeno, simular, medir o que de fato acontece e usar o resultado para
+melhorar o projeto.
 
 ---
 
-### 🚀 Projetos em Destaque
+### 🛠️ Competências
 
-#### 🛰️ [Integração de Dados Geoespaciais e Qualidade do Ar (CETESB & QGIS)](https://github.com/f1scher01/cetesb-air-quality-sp)
-*Pipeline de dados desenvolvido com foco na integração de séries temporais de monitoramento atmosférico com a Missão MAIA-NASA.*
-* Ingestão e agregação de dados de material particulado fino (PM₂.₅ e PM₁₀) de 17 estações automáticas da Grande São Paulo.
-* Modelagem contínua por interpolação espacial (IDW), fracionamento químico especiado (Sulfato, Nitrato, Carbono e Poeira) e estimativa de impacto em saúde pública (SIH/SUS).
-* Georreferenciamento e estruturação de camadas vetoriais em GeoJSON com rotinas de automação para o QGIS.
-* **Tecnologias:** Python, Pandas, NumPy, QGIS, Cartografia Digital, GeoJSON.
-
-#### 🏎️ [Sistema de Telemetria Veicular & Séries Temporais](https://github.com/f1scher01/telemetria-veicular-grafana) · [![Grafana Cloud](https://img.shields.io/badge/Grafana%20Cloud-Ao%20Vivo-F46800?style=flat-square&logo=grafana&logoColor=white)](https://fischerpaez.grafana.net/public-dashboards/5ea12a828dd1478eb54041c8624531d0)
-*Plataforma completa de aquisição, modelagem física e visualização contínua de dinâmica veicular e termodinâmica no Autódromo de Interlagos.*
-* Cockpit analítico completo no Grafana com tacômetro digital/analógico, shift lights, forças G (diagrama G-G) e traçado GPS sincronizado.
-* Monitoramento de pressão e temperatura de óleo do motor, arrefecimento e sobreposição de acelerador (TPS) e frenagem.
-* **Painel no Grafana Cloud:** [Acessar Demonstração Ao Vivo](https://fischerpaez.grafana.net/public-dashboards/5ea12a828dd1478eb54041c8624531d0)
-* **Tecnologias:** Grafana, InfluxDB, Docker, Python, Sensores Físicos (IMU, CAN-Bus, GPS), Séries Temporais.
-
-#### 📱 [PWA de Acompanhamento Acadêmico e Projeção de CR](https://github.com/f1scher01/notas-cr-maua-pwa)
-*Aplicação web progressiva para modelagem matemática de regras pedagógicas e cálculo de notas.*
-* Algoritmo que modela critérios de substituição de provas e projeta médias ponderadas e coeficiente de rendimento em tempo real.
-* Em produção e utilizado ativamente por colegas de turma.
-* **Tecnologias:** TypeScript, React, Next.js, Vercel.
+* **Programação e análise numérica:** Python (NumPy, Pandas, Matplotlib), TypeScript, JavaScript,
+  MATLAB, Minitab. Métodos iterativos, interpolação polinomial e ajuste por mínimos quadrados.
+* **Simulação estrutural:** Ansys Workbench e Mechanical — elementos finitos, geração de malha,
+  condições de contorno, tensão de von Mises. Formação complementar pelo Instituto ESSS.
+* **CAD:** CATIA / 3DEXPERIENCE, Siemens NX, SolidWorks, AutoCAD.
+* **Seleção de materiais:** Ansys Granta EduPack — constrições, índices de mérito, análise de custo.
+* **Dados e observabilidade:** Grafana, InfluxDB, Docker, séries temporais.
+* **Geoespacial:** camadas vetoriais GeoJSON, EPSG:4326, carregamento automatizado no console
+  Python do QGIS. *Sem experiência ainda com leitura de NetCDF/HDF5 reais.*
+* **Qualidade e processo:** Lean Six Sigma Green Belt, ciclo DMAIC.
+* **Idiomas:** Português nativo · Espanhol avançado · Inglês avançado · Francês intermediário
+  (TCF Tout Public: **B1 global, compreensão oral e escrita em B2**).
 
 ---
 
-### 🎓 Formação Acadêmica
+### 🚀 Projetos
 
-* **Bacharelado em Engenharia Mecânica** — Instituto Mauá de Tecnologia (Previsão: 12/2029)
-  * *Coeficiente de Rendimento:* **8,23 / 10**
-  * *Bolsa / Destaque:* 1º lugar regional no Défi InterAlliances 2026.
+#### 🛰️ [Integração Geoespacial de Poluição e Saúde Coletiva](https://github.com/f1scher01/cetesb-air-quality-sp) · `dados sintéticos`
+Estudo metodológico de integração entre sensoriamento remoto, medição de superfície e desfecho
+hospitalar na Região Metropolitana de São Paulo.
+* Interpolação espacial IDW implementada do zero, com tratamento do caso degenerado.
+* Função concentração-resposta da OMS, risco relativo e fração atribuível populacional.
+* Estruturação de camada vetorial GeoJSON e automação de carregamento no QGIS.
+* **Os dados de estação e de internação são sintéticos.** O repositório demonstra o método, não
+  produz estimativa epidemiológica.
+* **Stack:** Python, NumPy, Pandas, Matplotlib, QGIS, GeoJSON.
+
+#### 🏎️ [Simulador de Telemetria e Stack de Séries Temporais](https://github.com/f1scher01/telemetria-veicular-grafana) · `dados simulados` · [![Painel](https://img.shields.io/badge/Grafana%20Cloud-painel%20público-F46800?style=flat-square&logo=grafana&logoColor=white)](https://fischerpaez.grafana.net/public-dashboards/5ea12a828dd1478eb54041c8624531d0)
+Pipeline completo de geração, ingestão, persistência e visualização de séries temporais.
+* Modelo cinemático e termodinâmico gerando telemetria sintética a 10 Hz.
+* Ingestão via InfluxDB Line Protocol, persistência em InfluxDB 2.7, orquestração em Docker.
+* Dashboard Grafana provisionado automaticamente e cockpit web autônomo.
+* **A telemetria é gerada por simulação.** Não há veículo instrumentado.
+* **Stack:** Python, InfluxDB, Grafana, Docker, séries temporais.
+
+#### 📱 [PWA de Acompanhamento Acadêmico](https://github.com/f1scher01/notas-cr-maua-pwa) · `em produção`
+Aplicação web que modela as regras de avaliação de oito disciplinas e projeta médias e
+coeficiente de rendimento em tempo real.
+* Implementa as regras de prova substitutiva de cada disciplina a partir dos planos de ensino.
+* **Em uso real por colegas de curso.**
+* **Stack:** TypeScript, React, Next.js, Vercel.
+
+---
+
+### 🎓 Formação e distinções
+
+* **Bacharelado em Engenharia Mecânica** — Instituto Mauá de Tecnologia (conclusão prevista em
+  12/2029). Coeficiente de rendimento 8,23.
+* **Défi InterAlliances 2026** — 1º lugar na etapa local (Alliance Française Grande ABC) e **4º
+  lugar na final nacional brasileira**, com a maior taxa de acerto da final.
+* **Lean Six Sigma Green Belt** — projeto DMAIC aplicado ao sistema de inscrição em atividades
+  do IMT; a proposta foi entregue e o sistema reformulado no ano seguinte.
+* **TCF Tout Public** — France Éducation International, 2026.
