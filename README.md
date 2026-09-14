@@ -2,6 +2,7 @@
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/lucasfischerpaez)
 [![Email](https://img.shields.io/badge/Email-fischer.paez%40gmail.com-red?logo=gmail&logoColor=white)](mailto:fischer.paez@gmail.com)
+[![Portfólio](https://img.shields.io/badge/Portf%C3%B3lio-PT%20%C2%B7%20EN%20%C2%B7%20FR%20%C2%B7%20ES-f29d3d)](https://lucasfischer-portfolio.vercel.app)
 [![Web App](https://img.shields.io/badge/Web%20App-notas--cr--maua.vercel.app-blueviolet)](https://notas-cr-maua.vercel.app)
 
 Estudante do 2º ano de **Engenharia Mecânica** no **Instituto Mauá de Tecnologia (IMT)**, com
